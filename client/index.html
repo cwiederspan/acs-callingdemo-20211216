@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ACS Demo - User</title>
+</head>
+
+<body>
+  <h4>Azure Communication Services</h4>
+  <h1>Deaf User Client</h1>
+
+  <input 
+    id="token-input"
+    type="text"
+    style="margin-bottom:1em; width: 800px;"
+    readonly
+  />
+  </div>
+  <br/>
+  
+  <input 
+    id="groupId-input"
+    type="text"
+    placeholder="Call locator ID"
+    style="margin-bottom:1em; width: 250px;"
+  />
+  </div>
+  <button id="newgroupid-button" type="button">
+    Get New
+  </button>
+  <br />
+
+  <button id="start-button" type="button">
+    Start Call
+  </button>
+  <br/>
+  <br/>
+
+  <input 
+    id="phone-input"
+    type="text"
+    placeholder="+13038888500"
+    style="margin-bottom:1em; width: 250px;"
+    value="+13038888500"
+  />
+  <button id="phone-button" type="button">
+    Call Target
+  </button>
+  <br/>
+  <br/>
+
+  <div>Local Video</div>
+  <div style="height:200px; width:300px; background-color:black; position:relative;">
+    <div id="myVideo" style="background-color: black; position:absolute; top:50%; transform: translateY(-50%);">
+    </div>
+  </div>
+  <br />
+  <br />
+  <div>Remote Video</div>
+  <div style="height:200px; width:300px; background-color:black; position:relative;">
+    <div id="remoteVideo" style="background-color: black; position:absolute; top:50%; transform: translateY(-50%);">
+    </div>
+  </div>
+
+  <script src="./bundle.js"></script>
+</body>
+
+</html>
