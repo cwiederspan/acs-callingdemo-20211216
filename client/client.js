@@ -8,7 +8,8 @@ let localVideoStream;
 let rendererLocal;
 let rendererRemote;
 
-const apiBaseUrl = "http://127.0.0.1:5156"
+// const apiBaseUrl = "http://127.0.0.1:5156"
+const apiBaseUrl = "https://cdw-acsdemo-20211216-backend.azurewebsites.net"
 
 const startButton = document.getElementById("start-button");
 const phoneButton = document.getElementById("phone-button");

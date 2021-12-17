@@ -7,13 +7,14 @@ builder.Services.AddCors(options => {
         name: "MyCorsOrigins",
         builder => {
             builder.WithOrigins(
-                "http://localhost:8080"
+                "http://localhost:8080",
+                "https://cdw-acsdemo-20211216-frontend.azurewebsites.net"
             );
         }
     );
 });
 
-var client = new CommunicationIdentityClient(builder.Configuration["Acs:ConnectionString"]);
+var client = new CommunicationIdentityClient(builder.Configuration["ACS_CONN_STR"]);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
